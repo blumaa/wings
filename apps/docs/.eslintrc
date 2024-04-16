@@ -1,0 +1,19 @@
+{
+    "extends": [
+        "@fd/eslint-config",
+        "plugin:storybook/recommended"
+    ],
+    "overrides": [
+        {
+            "files": [
+                "*.js"
+            ],
+            "rules": {
+                "max-len": [2, 160, {
+                    "ignorePattern": "d=\"([\\s\\S]*?)\""
+                }]
+            }
+        }
+    ] 
+}
+
